@@ -22,9 +22,24 @@ body{
 #mainForm {
     display: flex;
     flex-direction: column;
+    row-gap: 15px;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
 }
 
 .optionDiv {
     display: flex;
     justify-content: center;
+}
+
+.optionContainerDiv{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.spaceDiv {
+    height: 5px;
 }
