@@ -1,0 +1,30 @@
+h1{
+    color: rgb(8, 3, 3);
+}
+
+body{
+    background-color: rgb(41, 49, 28);
+    padding: 3%
+}
+
+#container{
+    background-color: rgb(247, 240, 231);
+    padding: 2%;
+    border-radius: 20px;
+    border-color: rgb(8, 3, 3);
+    border: 10%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.optionDiv {
+    display: flex;
+    justify-content: center;
+}

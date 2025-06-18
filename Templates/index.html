@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Statics/estiloFormulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Formulario Completo</h1>
+        <form id="mainForm">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" >
+            <br><br>
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" name="edad">
+            <br><br>
+            <label for="codigoPostal">Código postal:</label>
+            <input type="number" id="codigoPostal" name="codigoPostal" placeholder="xxxxx">
+            <br><br>
+            <label for="genero">Género:</label><br>
+            <div class="optionDiv">
+                <input type="radio" name="genero" id="genero" value="Masculino" required checked>
+                <label for="genero">Masculino</label>
+            </div>
+            <div class="optionDiv">
+                <input type="radio" name="genero" id="genero" value="Femenino" required>
+                <label for="genero">Femenino</label>
+            </div>
+            <div class="optionDiv">
+                <input type="radio" name="genero" id="genero" value="Otro" required>
+                <label for="genero">Otro</label>
+            </div>
+            <br><br>
+            <label for="intereses">Intereses (selecciona todos los que apliquen):</label><br>
+            <input type="checkbox" name="intereses" id="intereses" value="Tecnología">
+            <label for="intereses">Tecnología</label>
+            <input type="checkbox" name="intereses" id="intereses" value="Deportes">
+            <label for="intereses">Deportes</label>
+            <input type="checkbox" name="intereses" id="intereses" value="Música">
+            <label for="intereses">Música</label>
+            <input type="checkbox" name="intereses" id="intereses" value="Arte">
+            <label for="intereses">Arte</label>
+            <br><br>
+            <label for="pais">País:</label>
+            <select id="pais" name="apis">
+                <option id="pais" name="pais" value="México">México</option>
+                <option id="pais" name="pais" value="Guatemala">Guatemala</option>
+                <option id="pais" name="pais" value="Belice">Belice</option>
+                <option id="pais" name="pais" value="Estados Unidos">Estados Unidos</option>
+                <option id="pais" name="pais" value="Canadá">Canadá</option>
+                <option id="pais" name="pais" value="España">España</option>
+                <option id="pais" name="pais" value="Argentina">Argentina</option>
+            </select>
+            <br><br>
+            <label for="comentarios">Comentarios adicionales:</label>
+            <br>
+            <textarea name="comentarios" id="comentarios" placeholder="Escribe aquí tus comentarios"></textarea>
+            <br><br>
+            <label for="imagen">Subir imagen:</label>
+            <br>
+            <input type="file" accept="*" name="imagen" id="imagen">
+            <br><br><br>
+            <button type="submit" class="submitBtn">Enviar formulario</button>
+            <br><br>
+        </form>
+    </div>
+    <script src="../Dynamics/js/funciones_validacion.js"></script>
+</body>
+</html>
