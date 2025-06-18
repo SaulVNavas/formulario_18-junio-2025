@@ -26,7 +26,7 @@ mainForm.addEventListener("submit", function(e){
 
     let input_cod = document.getElementById("codigoPostal");
 
-    if(input_cod.value.length != 5 || isNaN(input_cod.value)){
+    if(input_cod.value.toString().length != 5 || isNaN(input_cod.value)){
         console.log("Código postal no válido.");
         return;
     }
