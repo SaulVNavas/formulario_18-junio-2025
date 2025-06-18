@@ -12,16 +12,16 @@
         <form id="mainForm">
             <div class="inputDiv">
                 <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" >
+                <input type="text" id="nombre" name="nombre" required>
             </div>
             
             <div class="inputDiv">
                 <label for="edad">Edad:</label>
-                <input type="text" id="edad" name="edad">
+                <input type="text" id="edad" name="edad" required>
             </div>
             <div class="inputDiv">
                 <label for="codigoPostal">Código postal:</label>
-                <input type="number" id="codigoPostal" name="codigoPostal" placeholder="xxxxx">
+                <input type="number" id="codigoPostal" name="codigoPostal" placeholder="xxxxx" required>
             </div>
             <div class="inputDiv">
                 <label for="genero">Género:</label><br>
@@ -82,7 +82,7 @@
                 <input type="file" accept="*" name="imagen" id="imagen">
             </div>
             <div class="spaceDiv"></div>
-            <div class="inputDiv">
+            <div class="optionContainerDiv">
                 <button type="submit" class="submitBtn">Enviar formulario</button>
             </div>
             <div class="spaceDiv"></div>

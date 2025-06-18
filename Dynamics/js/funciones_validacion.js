@@ -44,10 +44,12 @@ mainForm.addEventListener("submit", function(e){
     }
 
     let input_interes = document.querySelector("input[name = 'intereses']:checked");
-    let intereses = ["Tecnología", "Deportes", "Música", "Arte"];
-    if (intereses.indexOf(input_interes.value)==-1){
-        console.log("Se debe ingresar una opción válida.");
-        return;
+    if (input_interes != null) {
+        let intereses = ["Tecnología", "Deportes", "Música", "Arte"];
+        if (intereses.indexOf(input_interes.value)==-1){
+            console.log("Se debe ingresar una opción válida.");
+            return;
+        }
     }
 
     let paises = ["México", "Guatemala", "Belice", "Estados Unidos", "Canadá", "España", "Argentina"];
